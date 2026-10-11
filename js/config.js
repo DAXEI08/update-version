@@ -8,6 +8,7 @@ export const TOAST_MS = 4000, TICK_MS = 250;
 // Layout dimensions. Edit these values to resize the interface (applied as CSS variables at startup).
 export const DIMENSIONS = {
   boardScale: 1,         // board size multiplier (0.5 - 1.5)
+  rackScale: 1,          // player racks size multiplier (0.6 - 1.3)
   buttonScale: 1,        // button height and text size multiplier (0.6 - 1.6)
   buttonGap: 6,          // gap between control buttons, px (0 - 24)
   controlColumns: 3,     // control buttons per row (1 - 6)
