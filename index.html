@@ -28,9 +28,9 @@
 <button class="btn" id="bUndo">تراجع</button>
 <button class="btn danger" id="bNew">لعبة جديدة</button>
 <button class="btn wide" id="bJudge">تحكيم</button>
-<button class="btn wide" id="bDims">أبعاد الواجهة</button>
+<button class="btn wide" id="bSettings">الإعدادات</button>
 </div>
-<div class="audioDock" aria-label="التحكم بالصوت">
+<div class="audioDock" aria-label="التحكم بالصوت" hidden>
 <button class="btn audioBtn" id="bSound" type="button" aria-label="كتم الصوت">🔊</button>
 <button class="btn audioSettingsBtn" id="bAudioSettings" type="button" aria-label="إعدادات الصوت" title="إعدادات الصوت">⚙</button>
 </div>
@@ -42,8 +42,9 @@
 <dialog id="bd" aria-labelledby="bT"><h2 id="bT" tabindex="-1" autofocus>اختر الحرف</h2><form method="dialog" id="bf"></form><form method="dialog" style="margin-top:10px"><button class="btn" value="">إلغاء</button></form></dialog>
 <dialog id="jd" aria-labelledby="jT"><h2 id="jT" tabindex="-1" autofocus></h2><div id="jB"></div></dialog>
 <dialog id="ad" aria-labelledby="aT">
-<h2 id="aT" tabindex="-1">إعدادات الصوت</h2>
+<h2 id="aT" tabindex="-1">الإعدادات</h2>
 <div class="audioPanel">
+<h3 class="setH">الصوت</h3>
 <div class="audioMaster">
 <button class="btn" id="bAudioMute" type="button" aria-pressed="false">🔊 الصوت مفعّل</button>
 </div>
@@ -59,10 +60,12 @@
 <button class="btn" id="bMusicToggle" type="button" aria-pressed="true">🎵 الموسيقى: تشغيل</button>
 <button class="btn" id="bSfxToggle" type="button" aria-pressed="true">🔔 المؤثرات: تشغيل</button>
 </div>
+<h3 class="setH">الأبعاد</h3>
+<div class="dimList" id="dmB"></div>
+<button class="btn" id="dmReset" type="button">إعادة ضبط الأبعاد</button>
 <form method="dialog"><button class="btn" value="">إغلاق</button></form>
 </div>
 </dialog>
-<dialog id="dm" aria-labelledby="mT"><h2 id="mT" tabindex="-1">أبعاد الواجهة</h2><div class="audioPanel" id="dmB"></div><form method="dialog"><button class="btn" id="dmReset" type="button">إعادة الضبط</button><button class="btn main" value="">تم</button></form></dialog>
 <section id="cover" class="cover" aria-label="Arabic Scrabble" hidden>
 <canvas id="coverCanvas" aria-hidden="true"></canvas>
 <div class="coverInner">
